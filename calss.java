@@ -11,7 +11,7 @@ public class calss {
         return (!p);
     }
     public static void main(String[] args) {
-        int k = 1222;
+        int k = 20;
         int counter1 = 0;
         int [] primes = new int[k];
         for (int i =0; i <= k;i++ ) {
@@ -21,7 +21,7 @@ public class calss {
                 counter1++;
             }
         }
-        for (int i =0; i<primes.length;i++){System.out.print(primes[i]);}
+      /*  for (int i =0; i<primes.length;i++){System.out.print(primes[i]);}*/
         System.out.println(isprime(38));
         int n1=0,n2=0;
         for (int i =0; i<primes.length;i++){
@@ -33,6 +33,19 @@ public class calss {
                 }
             }
         }
+        int p1=0, p2=0;
+        for (int i =0; i<primes.length;i++){
+            if (primes[i]!=0) {
+                p1 = primes[i];
+                if (isprime(k + p1)) {
+                    p2 = k +p1;
+                    break;
+                }
+            }
+        }
         System.out.println(n1+" "+n2);
+        System.out.println(p1+" "+p2);
+
+
     }
 }
