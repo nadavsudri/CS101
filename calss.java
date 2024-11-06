@@ -43,6 +43,15 @@ public class calss {
                 }
             }
         }
+        int c = 0;
+        for (int i =0; i<primes.length;i++){
+            if (primes[i]==0) {
+                break;
+            }
+            c++;
+            System.out.print(primes[i]+" ");
+        }
+        System.out.println("|So, "+c+" primes");
         System.out.println(n1+" "+n2);
         System.out.println(p1+" "+p2);
 
